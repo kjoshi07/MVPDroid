@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kc.mvpdroid.view.activity.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/firstNameInputLayout"
+        android:layout_marginTop="20dp"
+        android:layout_height="60dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="@string/first_name"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lastNameInputLayout"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:hint="@string/last_name"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/emailInputLayout"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:hint="@string/email"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_height="wrap_content"
+        android:id="@+id/errorMessageTextView"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:text="@string/register"
+        android:textStyle="bold"/>
+
+</LinearLayout>
