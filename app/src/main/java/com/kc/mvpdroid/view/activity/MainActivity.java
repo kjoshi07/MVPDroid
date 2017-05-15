@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements UserView {
 
     @Override
     public void showUserInfoSaved() {
-        Toast.makeText(getApplicationContext(), "User is saved successfully.", Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(), "User is saved successfully.", Toast.LENGTH_SHORT).show();
 
     }
 }
